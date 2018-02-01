@@ -1,0 +1,47 @@
+{
+  "name": "sapim-sample",
+  "version": "0.0.1",
+  "description": "SAP API Tools sample usage",
+  "main": "index.js",
+  "scripts": {
+    "build": "grunt",
+    "deploy": "grunt deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/serban-petrescu/sapim-sample.git"
+  },
+  "keywords": [
+    "sap",
+    "api",
+    "management",
+    "sample"
+  ],
+  "author": "Serban Petrescu",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/serban-petrescu/sapim-sample/issues"
+  },
+  "homepage": "https://github.com/serban-petrescu/sapim-sample#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "eslint": "^4.16.0",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "grunt": "^1.0.1",
+    "grunt-babel": "^7.0.0",
+    "grunt-browserify": "^5.2.0",
+    "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-uglify": "^3.3.0",
+    "load-grunt-tasks": "^3.5.2",
+    "sapim": "0.0.2"
+  },
+  "dependencies": {
+    "validate": "^3.0.1"
+  }
+}

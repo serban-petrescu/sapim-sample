@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ProxyEndPoint default="true">
+    <name>default</name>
+    <base_path>{{service-base-path}}</base_path>
+    <properties/>
+    <routeRules>
+        <routeRule>
+            <name>default</name>
+            <sequence>1</sequence>
+            <faultRules/>
+        </routeRule>
+    </routeRules>
+    <faultRules/>
+    <preFlow>
+        <name>PreFlow</name>
+        <response>
+            <isRequest>false</isRequest>
+            <steps>
+                <step>
+                    <policy_name>validate</policy_name>
+                    <condition></condition>
+                    <sequence>1</sequence>
+                </step>
+            </steps>
+        </response>
+    </preFlow>
+    <postFlow>
+        <name>PostFlow</name>
+    </postFlow>
+    <conditionalFlows/>
+</ProxyEndPoint>
