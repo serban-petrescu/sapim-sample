@@ -44,6 +44,11 @@ grunt.initConfig({
             }
         }
     },
+    "mochaTest": {
+        test: {
+            src: ["./test.js"]
+        }
+    },
     "package": {
         dist: {
             src: "dist/APIProxy",
@@ -72,5 +77,5 @@ grunt.registerMultiTask("upload", "Upload the proxy", function() {
     sapim.default().uploadProxy(this.data.src).then(this.async());
 });
 
-grunt.registerTask("default", ["clean", "copy", "browserify", "babel", "uglify", "package"]);
+grunt.registerTask("default", ["mochaTest", "clean", "copy", "browserify", "babel", "uglify", "package"]);
 grunt.registerTask("deploy", ["default", "upload"]);
